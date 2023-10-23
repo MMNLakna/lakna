@@ -43,11 +43,11 @@ header{
 }
 .header-1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: var(--buttons);
-  padding:1rem;
+  padding:1rem 2rem;
   position: relative;
   transition: 1s;
 
@@ -62,6 +62,10 @@ header{
   padding: 0.7rem;
   transition: 1s;
 
+}
+
+.hamburger{
+  display: none;
 }
 
 #list-2 {
@@ -81,7 +85,6 @@ header{
 }
 .search {
   position: relative;
-  margin-left: 40rem;
 }
 
 .tem{
@@ -91,10 +94,10 @@ header{
   font-size: 0.8rem;
   border: none;
   border-radius: 10px;
-  padding: 0.5rem;
-  width: 400px;
+  padding: 0.7rem;
+  width: 300px;
   outline: none;
-  background-color: #cfcfcf;
+  background-color: #ececec;
 }
 
 .bx-search-alt-2 {
@@ -106,7 +109,7 @@ header{
 }
 .bx-user-plus,
 .bx-cart-add {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(48, 47, 47);
   padding: 0.4rem;
 }
@@ -203,7 +206,6 @@ ul li:hover .dropdown {
 }
 .list li a:hover {
   color: white;
-  transform: scaleY(1.6);
 }
 /*item frame*/
 .image-line {
@@ -272,7 +274,7 @@ ul li:hover .dropdown {
   list-style: circle;
   line-height: 25px;
 }
-s .button-quantity {
+ .button-quantity {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -473,7 +475,7 @@ span{
   transition: 0.4s;
 }
 
-.bxs-discount {
+.bx-cart-alt {
   font-size: 1.7rem;
   top: 0;
   right: 0;
@@ -883,15 +885,7 @@ span {
     padding: 0.5rem 1.5rem;
   }
 
-  .cards {
-   
 
-    width: 200px;
-  }
-  .cards img {
-    height: 140px;
-    width: 100%;
-  }
 
   .footer-card a {
     color: black;
@@ -930,11 +924,7 @@ span {
     font-size: 2.3rem;
   }
   
-  .cards {
-
-
-    width: 190px;
-  }
+ 
   .cards img {
     height: 140px;
     width: 100%;
@@ -967,10 +957,7 @@ span {
    }
 
 }
-@media(max-width:1237px) {
-  
 
-}
 @media (max-width: 1221px) {
   #list-2 a {
     font-size: 1rem;
@@ -992,13 +979,7 @@ span {
     font-size: 0.7rem;
   }
 
-.cards {
- 
 
-  width: 180px;
-  padding: 0.2rem;
-  margin: 0.5rem;
-}
   
   .cards img {
     height: 130px;
@@ -1194,21 +1175,25 @@ span {
   }
   
   .header-2 {
-    position:absolute; 
+    position:fixed; 
+    top: 0;
     right: -1000px;
-    width: 70%;
+    width: 60%;
     height: 800px;
     background-color: var(--buttons);
     z-index: 1000;
     transition: 0.5s;
+    border: 2px solid rgb(158, 158, 158);
+
     overflow: auto;
 
   }
 
   .header-2.active{
     right: 0;
-    transition: 0.5s;
-  }
+    top: 0;
+    transition: 0.7s;
+   }
   .footer-card a {
     font-size: 0.8rem;
   }
@@ -1285,9 +1270,7 @@ span {
   }
 
   @media(max-width:681px){
-    #cart{
-      height: 2100px;
-     }
+  
     #bx {
       font-size: 0.8rem;
     }
@@ -1330,15 +1313,7 @@ span {
         margin: 3px;
        
       }
-      .cards {
-        height: 220px;
-      
-        width: 150px;
-        gap: 0.1rem;
-        margin-bottom: 0.1rem;
-        padding: 0.1rem;
-      }
-        
+   
         .cards img {
           height: 100px;
           width: 100%;
@@ -1393,19 +1368,26 @@ span {
       font-size: 0.6rem;
     
     }
-        .cards {
-        height: 220px;
-      
-        width: 150px;
-        gap: 0;
-        margin-bottom: 0;
-        padding: 0;
-      }
+       
         
         .cards img {
-          height: 100px;
+          height: 90px;
           width: 100%;
          
+        }
+
+
+        .cart-1{
+          
+          height: 5000px;
+        
+        }
+          
+        
+        
+        .cards{
+          width: 150px;
+          margin: -3PX;
         }
     
         .list-footer h2{
@@ -1413,7 +1395,7 @@ span {
          }
   }
 
-  @media(max-width:401px){
+  @media(max-width:400px){
   
     #search-mobile input{
       width: 180px;
@@ -1421,6 +1403,9 @@ span {
      
     }
     
+    .header-2{
+      width: 70%;
+    }
     #smobile{
       padding: 0.3rem 0.5rem;
       font-size: 0.6rem;
