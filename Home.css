@@ -18,7 +18,7 @@
 
 body {
   background-color: var(--back-color);
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 #active-home li a {
   color: rgb(242, 160, 8);

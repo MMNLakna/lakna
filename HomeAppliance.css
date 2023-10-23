@@ -49,6 +49,8 @@ header{
   background-color: var(--buttons);
   padding:1rem;
   position: relative;
+  transition: 1s;
+
 }
  
 .header-2{
@@ -58,6 +60,8 @@ header{
   background-color: #ebebeb;
   width: 100%;
   padding: 0.7rem;
+  transition: 1s;
+
 }
 
 #list-2 {
@@ -1192,14 +1196,18 @@ span {
   .header-2 {
     position:absolute; 
     right: -1000px;
-    width: 100%;
-    height: 1000px;
+    width: 70%;
+    height: 800px;
     background-color: var(--buttons);
     z-index: 1000;
+    transition: 0.5s;
+    overflow: auto;
+
   }
 
   .header-2.active{
-    left: 0;
+    right: 0;
+    transition: 0.5s;
   }
   .footer-card a {
     font-size: 0.8rem;
