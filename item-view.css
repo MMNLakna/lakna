@@ -235,6 +235,9 @@ ul li:hover .dropdown {
   align-items: center;
   justify-content: center;
 }
+.item-select{
+  margin-top: 1rem;
+}
 #main-image{
 
   height: 460px;
@@ -295,12 +298,13 @@ s .button-quantity {
   gap: 2rem;
 }
 .button-quantity button {
-  font-size: 1rem;
+  font-size: 0.2rem;
   padding: 0.3rem 0.7rem;
   background-color: var(--buttons);
   border: none;
   border-radius: 10px;
 }
+
 
 .button-price button {
   background-color: var(--buttons);
@@ -588,36 +592,99 @@ span {
 
 /*media quaries*/
 @media (max-width: 1800px) {
+  #main-image{
+
+    height: 360px;
+  }
+  .item-frame {
+ 
+    gap: 4rem;
+  
+  }
+  .item-details {
+  
+    width: 600px;
+    padding: 1.5rem;
+    
+    padding: 3rem;
+ 
+  
+  }
+ 
+  .item-details p {
+    font-size: 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+  .item-details h1 {
+    margin-bottom: 0.7rem;
+    font-size: 1.4rem;
+  }
+  
+  #price {
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .button-price ul {
+    margin-bottom: 1rem;
+  }
+
+   .button-quantity {
+    margin-bottom: 0.7rem;
+    gap: 1.3rem;
+    font-size: 1rem;
+  }
+  .button-quantity button {
+    font-size: 0.4rem;
+    padding: 0.3rem 0.7rem;
+    
+  }
+  #add-to-cart a{
+    font-size: 1rem;
+  }
+  
+  .button-price button {
+
+    font-size: 0.8rem;
+    padding: 0.6rem 1.5rem;
+    
+    margin-bottom: 1.2rem;
+  }
   
 
-  .cards {
-    height: auto;
-    width: 190px;
-    gap: 3rem;
-    
-  }
-    
-  .cart h1 {
+
+.suggest-items {
+ 
+  height: 530px;
+ 
+  gap: 2rem;
+}
+
+.suggest-items h1 {
+ 
+  left: 200px;
+  top: 30px;
+}
+.suggest-cards {
+ 
+  padding: 1.4rem;
   
-    font-size: 2rem;
-  }
-  .cards h2 {
-    
-    font-size: 0.8rem;
-   
-  }
+}
+
+.suggest-cards img {
+  width: 100%;
+  height: 80px;
+}
+.image-line img {
+  height: 110px;
+  width: 100%;
   
-  .cards button {
-    
-    padding: 0.5rem 1.8rem;
-    font-size: 0.9rem;
+  padding: 1rem;
+}
+  .item-select{
+    margin-top: 4rem;
   }
-  
-  .cards img {
-    height: 150px;
-    width: 100%;
-  
-  }
+
 }
 
 @media (max-width: 1650px) {
@@ -633,106 +700,239 @@ span {
     align-items: center;
     gap: 9rem;
   }
-  .hero-card {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.67)),
-      url(211103102546-underscored-ps5-vs-ps5-digital-lead.jpg);
-    width: 530px;
-    height: 620px;
-    border-radius: 20px;
-    line-height: 24px;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;
-    box-shadow: 0px 0px 2px 2px var(--shadow);
-  }
 
-  .item-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.67)),
-      url(iphone15pro-review-blogroll-1695086014290.jpg);
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    line-height: 24px;
-    background-position: center;
-    text-align: center;
-    background-size: cover;
-    padding: 2rem;
-    box-shadow: 0px 0px 2px 2px var(--shadow);
-
-    margin-bottom: 1rem;
-  }
-
-  #item-1 {
-    width: 320px;
-    height: 300px;
-  }
-  .item-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.67)),
-      url(tile_watch_se__cuswe7ukqd6q_large.jpg);
-    box-shadow: 0px 0px 2px 2px var(--shadow);
-    width: 370px;
-    height: 350px;
-    line-height: 24px;
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  #item-3 {
-    height: 250px;
-    width: 370px;
-  }
-
-  .item-3 h1 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-  .hero-section {
-    height: 820px;
-    padding: 4rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap;
-  }
 
   #list-2 li a {
     font-size: 0.7rem;
   }
- 
-  .cards {
-    height: auto;
-    width: 180px;
-    gap: 3rem;
-    
-  }
-    
-  .cart h1 {
-  
-    font-size: 1.8rem;
-  }
-  .cards h2 {
-    
-    font-size: 0.7rem;
-   
-  }
-  
-  .cards button {
-    
-    padding: 0.5rem 1.9rem;
-    font-size: 0.8rem;
 
+  #main-image{
+
+    height: 370px;
+  }
+  .item-frame {
+ 
+    gap: 2.5rem;
+  
+  }
+  .item-details {
+  
+    width: 500px;
+    padding: 1rem;
+    
+    padding: 2rem;
+ 
+  
+  }
+ 
+  .item-details p {
+    font-size: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .item-details h1 {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
   }
   
-  .cards img {
-    height: 140px;
-    width: 100%;
+  #price {
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
   }
   
+  .button-price ul {
+    margin-bottom: 1rem;
+  }
+
+   #button-quantity button {
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+    font-size:1rem;
+  }
+  .button-quantity {
+    font-size:1rem;
+    padding: 0.2rem 0.5rem;
+    
+  }
+  #add-to-cart a{
+    font-size: 0.9rem;
+  }
+  
+  .button-price button {
+
+    font-size: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    
+    margin-bottom: 0.8rem;
+  }
+
+
+.suggest-items h1 {
+ 
+  margin-left:20px;
+  top: 30px;
+  font-size: 1.3rem;
+}
+.suggest-cards {
+ 
+  padding: 1.2rem;
+  
+}
+
+.suggest-cards img {
+  width: 100%;
+  height: 80px;
+}
+.image-line img {
+  height: 90px;
+  width: 100%;
+  
+  padding: 0.8rem;
+}
+.item-select{
+  margin-top: 3rem;
+}
+}
+
+@media(max-width:1490px){
+ 
+  #main-image{
+
+    height: 340px;
+  }
+  .item-frame {
+ 
+    gap: 2rem;
+  
+  }
+  .item-details {
+  
+    width: 450px;
+    padding: 0.8rem;
+    padding: 1.8rem;
+ 
+  
+  }
+ 
+  .item-details p {
+    font-size: 0.1rem;
+    margin-bottom: 0.2rem;
+  }
+  .item-details h1 {
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+  
+  #price {
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+  
+  .button-price ul {
+    margin-bottom: 0.8rem;
+  }
+
+   #button-quantity button {
+    margin-bottom: 0.3rem;
+    gap: 0.8rem;
+    font-size:0.8rem;
+  }
+  .button-quantity {
+    font-size:0.8rem;
+    padding: 0.1rem 0.3rem;
+  }
+  
+  #add-to-cart a{
+    font-size: 0.7rem;
+  }
+  
+  
+  .button-price button {
+
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    
+    margin-bottom: 0.5rem;
+  }
+
+
+.suggest-items h1 {
+ 
+  margin-left:20px;
+  top: 30px;
+  font-size: 0.8rem;
+}
+.suggest-cards {
+ 
+  padding: 1.2rem;
+  
+}
+
+.suggest-cards img {
+  width: 100%;
+  height: 70px;
+}
+.suggest-cards h2 {
+ font-size: 0.3rem;
+}
+.image-line img {
+  height: 80px;
+  width: 100%;
+  
+  padding: 0.5rem;
+}
+.item-select{
+  margin-top: 4rem;
+}
+}
+
+@media (max-width: 1370px) {
+#list-2 a {
+  font-size: 1rem;
+  letter-spacing: 1.3px;
+}
+#list-2 {
+  gap: 0.8rem;
+}
+.search {
+  position: relative;
+  margin-left: 32rem;
+}
+.search input {
+  font-size: 0.9rem;
+}
+
+.bx-search-alt-2 {
+  right: 10px;
+  font-size: 1.2rem;
+}
+
+.bx-user-plus,
+.bx-cart-add {
+  font-size: 1.4rem;
+  color: rgb(48, 47, 47);
+  padding: 0.3rem;
+}
+.navbar-icon img {
+  height: 30px;
+  width: 30px;
+}
+
+
+.footer-card a {
+  color: black;
+  font-size: 1rem;
+  list-style: disc;
+}
+
+#bx {
+  font-size: 1.9rem;
+}
+#arrow {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+  
+
 }
 
 
@@ -760,101 +960,11 @@ span {
     list-style: disc;
   }
 
-  .hero-card {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.67)),
-      url(211103102546-underscored-ps5-vs-ps5-digital-lead.jpg);
-    width: 550px;
-    height: 620px;
-    border-radius: 20px;
-    line-height: 24px;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;
-    box-shadow: 0px 0px 2px 2px var(--shadow);
-  }
-
-  .item-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.67)),
-      url(iphone15pro-review-blogroll-1695086014290.jpg);
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    line-height: 24px;
-    background-position: center;
-    text-align: center;
-    background-size: cover;
-    padding: 2rem;
-    box-shadow: 0px 0px 2px 2px var(--shadow);
-
-    margin-bottom: 1rem;
-  }
-
-  #item-1 {
-    width: 320px;
-    height: 300px;
-  }
-  .item-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.67)),
-      url(tile_watch_se__cuswe7ukqd6q_large.jpg);
-    box-shadow: 0px 0px 2px 2px var(--shadow);
-    width: 320px;
-    height: 330px;
-    line-height: 24px;
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  #item-3 {
-    height: 270px;
-    width: 320px;
-  }
-
-  .item-3 h1 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  .cards {
-   
-    width: 170px;
-    gap: 2.5rem;
-    
-  }
-    
-  .cart h1 {
   
-    font-size: 1.8rem;
   }
-  .cards h2 {
-    
-    font-size: 0.7rem;
-   
-  }
-  
-  .cards button {
-    
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
 
-  }
-  
-  .cards img {
-    height: 130px;
-    width: 100%;
-  }
- 
-  .dropdown {
-    width: 140px;
-    height: 300px;
-}
-}
 
-@media (max-width: 1370px) {
+@media (max-width: 1380px) {
   #list-2 a {
     font-size: 1rem;
     letter-spacing: 1.3px;
@@ -886,19 +996,6 @@ span {
     width: 30px;
   }
 
-  .cart h1 {
-    font-size: 2rem;
-  }
-  .cards h2 {
-    font-size: 0.8rem;
-  }
-
-  .cards button {
-    font-size: 10px;
-    padding: 0.5rem 1.5rem;
-  }
-
-
 
   .footer-card a {
     color: black;
@@ -913,7 +1010,92 @@ span {
     font-size: 2rem;
     margin-left: 2rem;
   }
+  #main-image{
+
+    height: 350px;
+  }
+  .item-frame {
+ 
+    gap: 2rem;
+  
+  }
+  .item-details {
+  
+    width: 350px;
+    padding: 0.5rem;
+    padding: 1.5rem;
+
+  }
+ 
+  .item-details p {
+    font-size: 0.1rem;
+    margin-bottom: 0.2rem;
+  }
+  .item-details h1 {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  #price {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .button-price ul {
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+   #button-quantity button {
+    margin-bottom: 0.3rem;
+    gap: 0.7rem;
+    font-size:0.8rem;
+  }
+  .button-quantity {
+    font-size:0.5rem;
+    padding: 0.1rem 0.3rem;
+  }
+  
+  #add-to-cart a{
+    font-size: 0.7rem;
+  }
+  
+  .button-price button {
+
+    font-size: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    
+    margin-bottom: 0.5rem;
+  }
+
+
+.suggest-items h1 {
+ 
+  margin-left:20px;
+  top: 30px;
+  font-size: 0.8rem;
 }
+.suggest-cards {
+ 
+  padding: 1.2rem;
+  
+}
+
+.suggest-cards img {
+  width: 100%;
+  height: 60px;
+}
+.image-line img {
+  height: 60px;
+  width: 100%;
+  
+  padding: 0.5rem;
+}
+.item-select{
+  margin-top: 4rem;
+}
+}
+
 
 @media (max-width: 1334px) {
   .footer-card {
@@ -931,16 +1113,6 @@ span {
   #arrow {
     font-size: 1.3rem;
     margin-left: 1.5rem;
-  }
-
-  .cart h1 {
-    font-size: 2.3rem;
-  }
-  
- 
-  .cards img {
-    height: 140px;
-    width: 100%;
   }
 
   .bx-user-plus:hover {
@@ -1225,6 +1397,90 @@ span {
   .list-footer h2{
     font-size: 1rem;
    }
+   #main-image{
+
+    height: 300px;
+  }
+  .item-frame {
+ 
+    gap: 1rem;
+  
+  }
+  .item-details {
+  
+    width: 300px;
+    padding: 0.3rem;
+    padding: 1rem;
+
+  }
+ 
+  .item-details p {
+    font-size: 0.1rem;
+    margin-bottom: 0.2rem;
+  }
+  .item-details h1 {
+    margin-bottom: 0.3rem;
+    font-size: 0.7rem;
+  }
+  
+  #price {
+    font-size: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .button-price ul {
+    margin-bottom: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+   #button-quantity button {
+    margin-bottom: 0.3rem;
+    gap: 0.7rem;
+    font-size:0.5rem;
+  }
+  .button-quantity {
+    font-size:0.4rem;
+    padding: 0.1rem 0.3rem;
+  }
+  
+  #add-to-cart a{
+    font-size: 0.5rem;
+  }
+  
+  .button-price button {
+
+    font-size: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    
+    margin-bottom: 0.3rem;
+  }
+
+
+.suggest-items h1 {
+ 
+  margin-left:20px;
+  top: 30px;
+  font-size: 0.8rem;
+}
+.suggest-cards {
+ 
+  padding: 0.5rem;
+  
+}
+
+.suggest-cards img {
+  width: 100%;
+  height: 50px;
+}
+.image-line img {
+  height: 60px;
+  width: 100%;
+  
+  padding: 0.5rem;
+}
+.item-select{
+  margin-top: 3rem;
+}
 }
 
   @media (max-width: 950px) {
@@ -1433,6 +1689,7 @@ span {
    
       
   }
+
   @media(max-width:360px){
   
   }

@@ -1083,9 +1083,10 @@ span {
 @media (max-width: 1000px) {
   #list-2 {
     flex-direction: column;
-    text-align: center;
+    text-align: right;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    list-style: circle;
   }
 
 .header-1{
@@ -1184,7 +1185,6 @@ span {
     z-index: 1000;
     transition: 0.5s;
     border: 2px solid rgb(158, 158, 158);
-
     overflow: auto;
 
   }
@@ -1352,7 +1352,7 @@ span {
   }
   
 
-@media(max-width:547px) {
+@media(max-width:547px) { 
 
 }
   @media(max-width:480px){
@@ -1377,11 +1377,7 @@ span {
         }
 
 
-        .cart-1{
-          
-          height: 5000px;
-        
-        }
+      
           
         
         
